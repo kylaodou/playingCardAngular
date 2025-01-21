@@ -1,0 +1,88 @@
+#card{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    background-color: rgb(221, 221, 221);
+    transition: 0.6s;
+}
+
+#card:hover{
+    cursor: pointer;
+    scale: 1.05;
+    box-shadow: 2px 2px 5px rgb(255, 213, 0);
+
+}
+
+#inside{
+    background-color: rgb(255, 255, 100);
+}
+
+
+header{
+    padding: 10px;
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+
+    .left, .right{
+        width: 50%;
+    }
+
+    .right{
+        display: flex;
+        justify-content: end;
+    }
+
+
+}
+
+
+#article{
+    background-color: rgba(165, 162, 162, 0.415);
+    margin: 10px;
+    margin-top: 0px;
+}
+#article img{
+    padding: 5px;
+    width: 96%;
+    height: auto;
+}
+
+#article figcaption{
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.capacity{
+    .main{
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        padding-top: 0;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .name {
+        flex-grow: 1;
+    }
+    .cost{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    .description{
+        padding: 10px;
+        padding-top: 0px;
+        font-size: 17px;
+    }
+    
+
+}
+
+

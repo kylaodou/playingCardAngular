@@ -1,0 +1,54 @@
+<app-search-bar [(search)]="search" />
+
+<br/><br/>
+
+<div id="card-list">
+<!--     <app-playing-card *ngFor="let monster of filtredMonsters()" [monster]="monster" />
+ -->
+    @for (monster of filtredMonsters(); track $index) {
+        <app-playing-card [monster]="monster" />
+    } @empty {
+        <div class="center">Aucun monstre trouver ! </div>
+    }
+
+</div>
+
+@if (filtredMonsters().length > 0) {
+    <div class="center">{{filtredMonsters().length}} monstres trouvée ! </div>
+}
+
+<div class="center">
+  <button id="toogleMonster" (click)="addMonster()" >Ajouter Monster</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <app-search-bar (submit)="ajouterConteur()"  [(search)]="search" />
+
+Click count: {{count}}<br/>
+Rechercher parent : {{search}}
+<br/><br/>
+
+<button id="toogleMonster" (click)="toogleMonster()" >Toogle Monster</button>
+<div id="card-list">
+    <app-playing-card [monster]="monsters[selectedMonsterIndex]" />
+</div> -->
+
+
+
+
+
+
+<!-- <app-search-bar (searchButtonCliked)="ajouterConteur()" (searchChange)="search = $event" />
+ -->
