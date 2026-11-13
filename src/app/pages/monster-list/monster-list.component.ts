@@ -2,12 +2,12 @@ import { Component, computed, inject, model, signal } from '@angular/core';
 import { Monster } from '../../models/monster.model';
 import { PlayingCardComponent } from '../../components/playing-card/playing-card.component';
 import { SearchBarComponent } from '../../components/search-bar/search-bar.component';
-import { CommonModule } from '@angular/common';
+
 import { MonsterService } from '../../services/monsters/monster.service';
 
 @Component({
   selector: 'app-monster-list',
-  imports: [PlayingCardComponent,  SearchBarComponent, CommonModule],
+  imports: [PlayingCardComponent, SearchBarComponent],
   templateUrl: './monster-list.component.html',
   styleUrl: './monster-list.component.css'
 })
